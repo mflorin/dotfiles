@@ -35,7 +35,8 @@ set ai si fo+=r
 "set wrap
 "set linebreak
 set bs=2		" allow backspacing over everything in insert mode
-"set ai			" always set autoindenting on
+set ai			" always set autoindenting on
+set si
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set noautoindent
@@ -43,14 +44,19 @@ set ts=4
 set shiftwidth=4
 set laststatus=2
 set statusline=%<%f%=%(%h%m%r%=\ %l,%c%V\ %P%)
-set ai
-set si
 set incsearch
 set wmh=0
 set nohlsearch
 " key mapping
 map <C-j> <C-W>j<C-W>_
 map <C-k> <C-W>k<C-W>_
+
+map <C-n> :tabnew <ENTER>
+imap <C-n> :tabnew <ENTER>
+map <C-m> :tabnext <ENTER>
+imap <C-m> :tabnext <ENTER>
+map <C-b> :tabprevious <ENTER>
+imap <C-b> :tabprevious <ENTER>
 
 " colorscheme mycolors
 
