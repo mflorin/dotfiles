@@ -51,12 +51,12 @@ set nohlsearch
 map <C-j> <C-W>j<C-W>_
 map <C-k> <C-W>k<C-W>_
 
-map <C-n> :tabnew <ENTER>
-imap <C-n> :tabnew <ENTER>
+map <C-n> :tabprevious <ENTER>
+imap <C-n> :tabprevious <ENTER>
 map <C-m> :tabnext <ENTER>
 imap <C-m> :tabnext <ENTER>
-map <C-b> :tabprevious <ENTER>
-imap <C-b> :tabprevious <ENTER>
+map <C-b> :tabnew <ENTER>
+imap <C-b> :tabnew <ENTER>
 
 " colorscheme mycolors
 
