@@ -1,0 +1,18 @@
+[user]
+	name = Florin Mihalache
+	email = florin.mihalache@gmail.com
+[github]
+	user = mflorin
+	token = ee03fb79561a33554e480f7c91868d58
+[alias]
+	ci = commit
+	co = checkout
+	rb = rebase
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit
+	lola = log --all --graph --decorate --pretty=oneline --abbrev-commit
+[color]
+	ui = auto
+	diff = auto
+	status = auto
+	branch = auto
+
