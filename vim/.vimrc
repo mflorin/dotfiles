@@ -51,6 +51,14 @@ set nohlsearch
 map <C-j> <C-W>j<C-W>_
 map <C-k> <C-W>k<C-W>_
 
+" NERDTree
+map <F9> :NERDTreeToggle<CR>
+imap <F9> :NERDTreeToggle<CR>
+
+" Tagbar
+map <F8> :TagbarToggle<CR>
+imap <F8> :TagbarToggle<CR>
+
 " map <C-n> :tabprevious <ENTER>
 " imap <C-n> :tabprevious <ENTER>
 " map <C-m> :tabnext <ENTER>
@@ -87,3 +95,7 @@ endfun
 
 map f :call ShowFuncName() <CR>
 map c :call ShowClassName() <CR>
+
+call pathogen#infect()
+
+
