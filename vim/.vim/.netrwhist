@@ -1,4 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/var/www/magento/app/code/core/Mage/Catalog/Helper/Category'
-let g:netrw_dirhist_2='/var/www/magento/app/code/core/Mage/Catalog/Helper'
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/mflorin/work/projects/ocentric/src/magento/app/design/frontend/enterprise/default/template/oviewintegration'
+let g:netrw_dirhist_2='/Users/mflorin/work/projects/ocentric/src/magento/app/design/frontend/enterprise/default/template/targetrule'
+let g:netrw_dirhist_3='/Users/mflorin/work/projects/ocentric/src/magento/lib/icalcreator'

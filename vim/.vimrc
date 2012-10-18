@@ -25,7 +25,6 @@ au FileType php let php_folding = 1
 syntax on
 filetype plugin on
 filetype indent on
-set ai si fo+=r
 
 "hi Identifier     term=underline  ctermfg=white ctermbg=black
 "hi Statement      term=bold  ctermfg=2 
@@ -37,6 +36,7 @@ set ai si fo+=r
 set bs=2		" allow backspacing over everything in insert mode
 set ai			" always set autoindenting on
 set si
+set fo+=r
 set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set noautoindent
@@ -47,24 +47,33 @@ set statusline=%<%f%=%(%h%m%r%=\ %l,%c%V\ %P%)
 set incsearch
 set wmh=0
 set nohlsearch
-" key mapping
+
+" window navigation
 map <C-j> <C-W>j<C-W>_
+imap <C-j> <C-W>j<C-W>_
 map <C-k> <C-W>k<C-W>_
+imap <C-k> <C-W>k<C-W>_
+map <C-h> <C-W>h
+imap <C-h> <C-W>h
+map <C-l> <C-W>l
+imap <C-l> <C-W>l
 
 " NERDTree
-map <F9> :NERDTreeToggle<CR>
-imap <F9> :NERDTreeToggle<CR>
+map <F8> :NERDTreeToggle<CR>
+imap <F8> :NERDTreeToggle<CR>
 
 " Tagbar
-map <F8> :TagbarToggle<CR>
-imap <F8> :TagbarToggle<CR>
+map <F9> :TagbarToggle<CR>
+imap <F9> :TagbarToggle<CR>
 
-" map <C-n> :tabprevious <ENTER>
-" imap <C-n> :tabprevious <ENTER>
-" map <C-m> :tabnext <ENTER>
-" imap <C-m> :tabnext <ENTER>
-" map <C-b> :tabnew <ENTER>
-" imap <C-b> :tabnew <ENTER>
+" Tabs
+map <C-a> :tabprevious<CR>
+imap <C-a> :tabprevious<CR>
+map <C-d> :tabnext<CR>
+imap <C-d> :tabnext<CR>
+map <C-f> :tabnew<CR>
+imap <C-f> :tabnew<CR>
+
 
 " colorscheme mycolors
 

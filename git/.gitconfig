@@ -16,3 +16,5 @@
 	status = auto
 	branch = auto
 
+[core]
+	excludesfile = /Users/mflorin/.gitignore_global
