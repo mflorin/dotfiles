@@ -26,6 +26,9 @@ syntax on
 filetype plugin on
 filetype indent on
 
+set modeline
+set modelines=1
+
 "hi Identifier     term=underline  ctermfg=white ctermbg=black
 "hi Statement      term=bold  ctermfg=2 
 "hi Special        term=bold  ctermfg=6 ctermbg=black
@@ -104,6 +107,7 @@ endfun
 
 map f :call ShowFuncName() <CR>
 map c :call ShowClassName() <CR>
+
 
 call pathogen#infect()
 

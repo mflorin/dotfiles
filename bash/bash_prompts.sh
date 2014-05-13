@@ -40,7 +40,12 @@ function elite {
 	local BRIGHT_YELLOW="\[\033[1;33m\]"
 	local BRIGHT_GREEN="\[\033[01;32m\]"
 	local DARK_GRAY="\[\033[01;30m\]"
-    PS1="$COLOR3-$COLOR1-$COLOR2($BRIGHT_YELLOW\u$COLOR3@$BRIGHT_GREEN\h$COLOR2)$COLOR1-$COLOR2($DARK_GRAY\$(date +%I:%M%P)$COLOR3 $DARK_GRAY\$(date +%m/%d/%y)$COLOR2)$COLOR1-$COLOR3-$COLOR4\n$COLOR3-$COLOR1-$COLOR2($DARK_GRAY${newPWD}$COLOR2)$COLOR1-$COLOR3-$COLOR4 "
+
+	local branch=$(git branch 2>/dev/null | grep "*" | cut -d " " -f 2)
+	if [ ! -z "${branch}" ]; then
+		branch="[ ${branch} ]"
+	fi
+    PS1="$COLOR3-$COLOR1-$COLOR2($BRIGHT_YELLOW\u$COLOR3@$BRIGHT_GREEN\h$COLOR2)$COLOR1-$COLOR2($DARK_GRAY\$(date +%I:%M%P)$COLOR3 $DARK_GRAY\$(date +%m/%d/%y)$COLOR2)$COLOR1-$COLOR3-$COLOR4\n$COLOR3-$COLOR1-$COLOR2($DARK_GRAY${newPWD}$COLOR2)$COLOR1-$COLOR3${branch}-$COLOR4 "
 PS2="$COLOR2-$COLOR1-$COLOR3-$COLOR4 "
 }
 

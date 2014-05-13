@@ -15,7 +15,7 @@ function C_Header()
 	call append(6, " * \$History\$")
 	call append(7, " */")
 	call append(8, "")
-	call append(9, "")
+	call append(9, "/* vim: set ts=4 sw=4 noexpandtab: */")
 	
 endfunction
 

@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
-let g:netrw_dirhist_1='/Users/mflorin/work/projects/ocentric/src/magento/app/design/frontend/enterprise/default/template/oviewintegration'
-let g:netrw_dirhist_2='/Users/mflorin/work/projects/ocentric/src/magento/app/design/frontend/enterprise/default/template/targetrule'
-let g:netrw_dirhist_3='/Users/mflorin/work/projects/ocentric/src/magento/lib/icalcreator'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/mflorin/work/projects/scaffold/magento'
+let g:netrw_dirhist_2='/Users/mflorin/work/projects/ocentric-magneto-debug/magento/app/code/community/Magneto/Debug/controllers'
+let g:netrw_dirhist_3='/Users/mflorin/work/projects/ocentric-magneto-debug/magento/app/code/community/Magneto/Debug/Helper'
+let g:netrw_dirhist_4='/Volumes/workspace/magento/lib/Varien/Object'

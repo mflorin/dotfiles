@@ -10,6 +10,7 @@
 	rb = rebase
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --all --graph --decorate --pretty=oneline --abbrev-commit
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 [color]
 	ui = auto
 	diff = auto
@@ -18,3 +19,13 @@
 
 [core]
 	excludesfile = /Users/mflorin/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = upstream
+[merge]
+	renamelimit = 3000
