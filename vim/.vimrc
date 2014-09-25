@@ -111,4 +111,6 @@ map c :call ShowClassName() <CR>
 
 call pathogen#infect()
 
+set mouse=a
+set ttymouse=xterm
 
