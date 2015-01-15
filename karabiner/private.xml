@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<root>
+	
+	<appdef>
+		<appname>ITERM</appname>
+		<equal>com.googlecode.iterm2</equal>
+	</appdef>
+	
+    <item>
+      <name>MY HOME END</name>
+      <appendix>(Use Home and End key to beginning-of-line/end-of-line.)</appendix>
+      <appendix>NOT FOR ITERM</appendix>
+      <identifier>private.homeend</identifier>
+      <block>
+        <not>ITERM</not>
+        <autogen>__KeyToKey__ FROMKEYCODE_HOME, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::CURSOR_UP,    ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ FROMKEYCODE_HOME, MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_UP,    ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ FROMKEYCODE_END,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_COMMAND, KeyCode::CURSOR_DOWN,  ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ FROMKEYCODE_END,  MODIFIERFLAG_EITHER_LEFT_OR_RIGHT_CONTROL, KeyCode::CURSOR_DOWN,  ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ FROMKEYCODE_HOME,             KeyCode::CURSOR_LEFT,  ModifierFlag::COMMAND_L</autogen>
+        <autogen>__KeyToKey__ FROMKEYCODE_END,              KeyCode::CURSOR_RIGHT, ModifierFlag::COMMAND_L</autogen>
+      </block>
+    </item>
+
+</root>
