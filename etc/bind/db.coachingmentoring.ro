@@ -1,0 +1,21 @@
+$ORIGIN coachingmentoring.ro.
+$TTL 86400
+@	IN	SOA     ns.coachingmentoring.ro.     florin.coachingmentoring.ro. (
+	                2015042705      ; Serial
+	                86400           ; Refresh
+	                10800           ; Retry
+	                1209600         ; Expire
+	                604800 )        ; Minimum
+
+	IN      NS      ns.coachingmentoring.ro.
+	IN		MX  10	mail.coachingmentoring.ro.
+;	IN		MX	10	c924c54ad9695a418a88f63ddc6b47.pamx1.hotmail.com.
+;	IN		TXT		"v=spf1 include:hotmail.com ~all"
+
+@		IN 	A    	69.160.42.195
+ns      IN  A       69.160.42.195
+maya	IN	A		69.160.42.195
+www		IN	CNAME	maya
+mail	IN	CNAME	maya
+;webmail	IN	CNAME	mail.live.com.
+;mail	IN	CNAME	mail.live.com.

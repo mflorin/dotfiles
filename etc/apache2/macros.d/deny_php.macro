@@ -1,0 +1,12 @@
+<Macro NoPHP $dir>
+
+	<DirectoryMatch $dir> 
+		Options -Indexes
+    	php_admin_flag engine off
+	    AllowOverride None
+		DirectoryIndex Off
+		RewriteEngine On
+		RewriteRule \.php$ - [F,L]
+	</DirectoryMatch>
+
+</Macro>

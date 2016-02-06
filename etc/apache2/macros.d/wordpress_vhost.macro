@@ -1,0 +1,51 @@
+<Macro WPVHost $host>
+	<VirtualHost 69.160.42.195:80>
+		ServerAdmin florin.mihalache@gmail.com
+		ServerName $host
+		ServerAlias www.$host
+
+		DocumentRoot /var/www/vhosts/$host/httpdocs
+		<Directory />
+			Options FollowSymLinks
+			AllowOverride None
+		</Directory>
+
+		<Directory /var/www/vhosts/$host/httpdocs>
+			Options Indexes FollowSymLinks MultiViews
+			AllowOverride None
+			Order allow,deny
+			allow from all
+		</Directory>
+
+		# protect against scanners
+		Use NoScanners
+
+		# protect against running malicious php scripts
+		Use NoPHP /var/www/vhosts/$host/httpdocs/wp-content/(uploads|themes|upgrade)
+		Use NoPHP /var/www/vhosts/$host/httpdocs/wp-content
+		Use NoPHP /var/www/vhosts/$host/httpdocs/wp-includes
+		Use NoPHP /var/www/vhosts/$host/httpdocs/.git
+
+		# protect dev folder
+		Use NoPHP /var/www/vhosts/$host/httpdocs/test/wp-content/(uploads|themes|upgrade)
+		Use NoPHP /var/www/vhosts/$host/httpdocs/test/wp-includes
+
+		ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+		<Directory "/usr/lib/cgi-bin">
+			AllowOverride None
+			Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+			Order allow,deny
+			Allow from all
+		</Directory>
+
+		ErrorLog /var/www/vhosts/$host/logs/error.log
+
+		# Possible values include: debug, info, notice, warn, error, crit,
+		# alert, emerg.
+		LogLevel warn
+
+		CustomLog /var/www/vhosts/$host/logs/access.log combined
+
+
+	</VirtualHost>
+</Macro>

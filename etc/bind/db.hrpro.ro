@@ -1,0 +1,41 @@
+$ORIGIN hrpro.ro.
+$TTL 86400
+@	IN	SOA     ns1.hrpro.ro.     florin.hrpro.ro. (
+	                2012080601      ; Serial
+	                86400           ; Refresh
+	                10800           ; Retry
+	                1209600         ; Expire
+	                604800 )        ; Minimum
+
+	IN      NS      ns1.hrpro.ro.
+
+	IN		MX		1	ASPMX.L.GOOGLE.COM. 
+	IN		MX		5	ALT1.ASPMX.L.GOOGLE.COM.
+	IN		MX		5	ALT2.ASPMX.L.GOOGLE.COM. 
+	IN		MX		10	ASPMX2.GOOGLEMAIL.COM. 
+	IN		MX		10	ASPMX3.GOOGLEMAIL.COM. 
+
+@               IN 	A    	69.160.42.195
+ns1             IN      A       69.160.42.195
+www		IN	A	69.160.42.195
+webmail		IN	CNAME	ghs.google.com.
+calendar	IN	CNAME	ghs.google.com.
+docs		IN	CNAME	ghs.google.com.
+sites		IN	CNAME	ghs.google.com.
+mail		IN	CNAME	webmail
+_xmpp-server._tcp.hrpro.ro. IN SRV 5 0 5269 xmpp-server.l.google.com.
+_xmpp-server._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server1.l.google.com.
+_xmpp-server._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server2.l.google.com.
+_xmpp-server._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server3.l.google.com.
+_xmpp-server._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server4.l.google.com.
+_jabber._tcp.hrpro.ro. IN SRV 5 0 5269 xmpp-server.l.google.com.
+_jabber._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server1.l.google.com.
+_jabber._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server2.l.google.com.
+_jabber._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server3.l.google.com.
+_jabber._tcp.hrpro.ro. IN SRV 20 0 5269 xmpp-server4.l.google.com.
+_xmpp-client._tcp.hrpro.ro IN SRV 5 0 5222 talk.l.google.com.
+_xmpp-client._tcp.hrpro.ro IN SRV 20 0 5222 talk1.l.google.com.
+_xmpp-client._tcp.hrpro.ro IN SRV 20 0 5222 talk2.l.google.com.
+_xmpp-client._tcp.hrpro.ro IN SRV 20 0 5222 talk3.l.google.com.
+_xmpp-client._tcp.hrpro.ro IN SRV 20 0 5222 talk4.l.google.com.
+@				IN TXT "google-site-verification=VXyzeNzg8XbZ7kOAD2vdr6DeddzYr8DNDMYSRU8barQ"

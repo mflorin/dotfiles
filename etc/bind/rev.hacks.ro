@@ -1,0 +1,12 @@
+$ORIGIN 118.22.184.in-addr.arpa.
+$TTL 86400
+@	IN	SOA     ns1.hacks.ro.     florin.hacks.ro. (
+                	2007010104      ; Serial
+	                86400           ; Refresh
+	                10800           ; Retry
+	                1209600         ; Expire
+	                604800 )        ; Minimum
+
+	IN      NS      ns1.hacks.ro.
+
+132	IN 	PTR	maya.hacks.ro.

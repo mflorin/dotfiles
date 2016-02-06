@@ -1,0 +1,43 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "hacks.ro" IN {
+	type master;
+	file "/etc/bind/db.hacks.ro";
+	notify yes;
+};
+
+zone "72.60.194.in-addr.arpa" IN {
+	type master;
+	file "/etc/bind/rev.hacks.ro";
+	allow-update { none; };
+};
+
+zone "hrpro.ro" IN {
+	type master;
+	file "/etc/bind/db.hrpro.ro";
+	notify yes;
+};
+
+zone "innoireavietii.ro" IN {
+	type master;
+	file "/etc/bind/db.innoireavietii.ro";
+	notify yes;
+};
+
+zone "danielfusarea.ro" IN {
+	type master;
+	file "/etc/bind/db.danielfusarea.ro";
+	notify yes;
+};
+
+zone "coachingmentoring.ro" IN {
+	type master;
+	file "/etc/bind/db.coachingmentoring.ro";
+	notify yes;
+};
