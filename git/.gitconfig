@@ -19,6 +19,7 @@
 
 [core]
 	excludesfile = /Users/mflorin/.gitignore_global
+	autocrlf = input
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
 	path = 
