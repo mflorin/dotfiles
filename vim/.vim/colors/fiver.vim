@@ -11,7 +11,7 @@
 hi clear
 
 set background=dark
-let g:colors_name="molokai"
+let g:colors_name="fiver"
 
 " Basic Layout {{{
 hi Normal          guifg=#F8F8F2 guibg=#1B1E1F
@@ -40,7 +40,6 @@ hi Float           guifg=#AE81FF
 hi Function        guifg=#A6E22E
 hi Identifier      guifg=#FD971F
 hi Builtin         guifg=#AE81FF               gui=bold
-hi Folded cterm=bold ctermfg=red ctermbg=0
 hi StatusLine term=bold cterm=bold ctermfg=yellow ctermbg=0
 " }}}
 " Diffs {{{
@@ -164,7 +163,7 @@ if &t_Co > 255
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=67  ctermbg=233
    " hi Folded          ctermfg=67  ctermbg=233
-   hi Folded cterm=bold ctermfg=red ctermbg=0
+   hi Folded ctermfg=84 ctermbg=233
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208
    hi Ignore          ctermfg=244 ctermbg=232
