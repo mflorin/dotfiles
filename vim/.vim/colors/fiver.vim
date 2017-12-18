@@ -161,9 +161,9 @@ if &t_Co > 255
    hi ErrorMsg        ctermfg=199 ctermbg=16    cterm=bold
    hi Exception       ctermfg=118               cterm=bold
    hi Float           ctermfg=135
-   hi FoldColumn      ctermfg=67  ctermbg=233
-   " hi Folded          ctermfg=67  ctermbg=233
-   hi Folded ctermfg=84 ctermbg=233
+   hi FoldColumn      ctermfg=67  ctermbg=0
+   " hi Folded          ctermfg=67  ctermbg=0
+   hi Folded ctermfg=84 ctermbg=0
    hi Function        ctermfg=118
    hi Identifier      ctermfg=208
    hi Ignore          ctermfg=244 ctermbg=232
@@ -173,8 +173,8 @@ if &t_Co > 255
    hi Label           ctermfg=229               cterm=none
    hi Macro           ctermfg=193
    hi SpecialKey      ctermfg=81
-   hi MailHeaderEmail ctermfg=3  ctermbg=233
-   hi MailEmail       ctermfg=3  ctermbg=233
+   hi MailHeaderEmail ctermfg=3  ctermbg=0
+   hi MailEmail       ctermfg=3  ctermbg=0
 
    hi MatchParen      ctermfg=16  ctermbg=208 cterm=bold
    hi ModeMsg         ctermfg=229
@@ -226,13 +226,13 @@ if &t_Co > 255
    hi WarningMsg      ctermfg=231 ctermbg=238   cterm=bold
    hi WildMenu        ctermfg=81  ctermbg=16
 
-   hi Normal          ctermfg=252 ctermbg=233
+   hi Normal          ctermfg=252 ctermbg=0
    hi Comment         ctermfg=59
    hi CursorLine                  ctermbg=234   cterm=none
    hi CursorColumn                ctermbg=234
    hi ColorColumn                 ctermbg=234
-   hi LineNr          ctermfg=250 ctermbg=233
-   hi NonText         ctermfg=240 ctermbg=233
+   hi LineNr          ctermfg=250 ctermbg=0
+   hi NonText         ctermfg=240 ctermbg=0
 end " }}}
 
 highlight Comment cterm=bold
