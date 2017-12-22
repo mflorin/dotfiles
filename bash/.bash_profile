@@ -23,13 +23,12 @@ elite
 
 
 # OptAF configuration
-OPTAF=$HOME/work/_desk/optaf/OptAF
-PYTHONPATH=$OPTAF
-PATH=${OPTAF}/libs/mac:$PATH
 LSCOLORS="cxfxcxdxbxegedabagacad"
 
 export LSCOLORS PATH PS1 EDITOR
 unset USERNAME
+
+setterm -blength 0
 
 ##
 # Your previous /Users/mflorin/.bash_profile file was backed up as /Users/mflorin/.bash_profile.macports-saved_2012-08-13_at_18:04:14
@@ -38,12 +37,6 @@ unset USERNAME
 # MacPorts Installer addition on 2012-08-13_at_18:04:14: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
-
-. $HOME/functions.sh
-
-##
-# Your previous /Users/mflorin/.bash_profile file was backed up as /Users/mflorin/.bash_profile.macports-saved_2014-09-25_at_23:13:27
-##
 
 # MacPorts Installer addition on 2014-09-25_at_23:13:27: adding an appropriate PATH variable for use with MacPorts.
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
