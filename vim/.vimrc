@@ -78,10 +78,10 @@ map <C-f> :tabnew<CR>
 imap <C-f> :tabnew<CR>
 
 
-" colorscheme mycolors
+colorscheme fiver
 
-hi Folded cterm=bold ctermfg=red ctermbg=0
-hi StatusLine term=bold cterm=bold ctermfg=yellow ctermbg=0
+" hi Folded cterm=bold ctermfg=red ctermbg=0
+" hi StatusLine term=bold cterm=bold ctermfg=yellow ctermbg=0
 
 au BufNewFile,BufRead * exe "normal \<C-j>\<C-k>"
 
