@@ -1,11 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/mflorin/work/projects/scaffold/magento'
-let g:netrw_dirhist_2='/Users/mflorin/work/projects/ocentric-magneto-debug/magento/app/code/community/Magneto/Debug/controllers'
-let g:netrw_dirhist_3='/Users/mflorin/work/projects/ocentric-magneto-debug/magento/app/code/community/Magneto/Debug/Helper'
-let g:netrw_dirhist_4='/Volumes/workspace/magento/lib/Varien/Object'
-let g:netrw_dirhist_5='/Users/Florin/Library/Application Support/JetBrains/PrivacyPolicy'
-let g:netrw_dirhist_6='/Users/Florin/work/test/test.dSYM'
-let g:netrw_dirhist_7='/Users/Florin/work/test/test.dSYM/Contents'
-let g:netrw_dirhist_8='/Users/Florin/work/test/test.dSYM/Contents/Resources'
-let g:netrw_dirhist_9='/Users/Florin/work/test/test.dSYM/Contents/Resources/DWARF'
+let g:netrw_dirhist_cnt =0
