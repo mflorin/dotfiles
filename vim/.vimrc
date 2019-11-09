@@ -109,8 +109,9 @@ map f :call ShowFuncName() <CR>
 map c :call ShowClassName() <CR>
 
 
-call pathogen#infect()
-
 "set mouse=a
 set ttymouse=xterm
 
+" airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1

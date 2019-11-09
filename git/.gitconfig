@@ -11,6 +11,7 @@
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit
 	lola = log --all --graph --decorate --pretty=oneline --abbrev-commit
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	oldest-ancestor = !zsh -c 'diff --old-line-format='' --new-line-format='' <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | head -1' -
 [color]
 	ui = auto
 	diff = auto

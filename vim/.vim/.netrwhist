@@ -1,2 +1,10 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =0
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/florin/work/go/src/coding-club-mw/sql'
+let g:netrw_dirhist_2='/private/tmp/sql'
+let g:netrw_dirhist_3='/Users/florin/work/code/testj/build'
+let g:netrw_dirhist_4='/Users/florin/test'
+let g:netrw_dirhist_5='/Users/florin/work/code/ohp/dashboard-sentinel/services'
+let g:netrw_dirhist_6='/Users/florin/work/code/ohp/atlas/sentinel'
+let g:netrw_dirhist_7='/Users/florin/work/devops/dashboard/prod-biveto-crons/.git'
+let g:netrw_dirhist_8='/Users/florin/.npm'
