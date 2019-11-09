@@ -10,3 +10,6 @@
 [submodule "vim/.vim/pack/mflorin/start/syntastic"]
 	path = vim/.vim/pack/mflorin/start/syntastic
 	url = git@github.com:vim-syntastic/syntastic.git
+[submodule "vim/.vim/pack/mflorin/start/nerdtree-git-plugin"]
+	path = vim/.vim/pack/mflorin/start/nerdtree-git-plugin
+	url = git@github.com:Xuyuanp/nerdtree-git-plugin.git
