@@ -1,3 +1,6 @@
 [submodule "vim/.vim/pack/mflorin/start/vim-airline"]
 	path = vim/.vim/pack/mflorin/start/vim-airline
 	url = git@github.com:vim-airline/vim-airline.git
+[submodule "vim/.vim/pack/mflorin/start/nerdtree"]
+	path = vim/.vim/pack/mflorin/start/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
