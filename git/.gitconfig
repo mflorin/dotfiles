@@ -31,3 +31,5 @@
 	default = upstream
 [merge]
 	renamelimit = 3000
+[pull]
+	rebase = false
