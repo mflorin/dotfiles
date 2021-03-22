@@ -13,10 +13,6 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 
-let g:xml_syntax_folding=1
-
-au FileType xml setlocal foldmethod=syntax
-
 au FileType php let php_sql_query = 1
 au FileType php let php_baselib = 1
 au FileType php let php_htmlInStrings = 1
@@ -27,7 +23,7 @@ filetype plugin on
 filetype indent on
 
 set modeline
-set modelines=1
+set modelines=5
 
 "hi Identifier     term=underline  ctermfg=white ctermbg=black
 "hi Statement      term=bold  ctermfg=2 
@@ -61,6 +57,15 @@ imap <C-h> <C-W>h
 map <C-l> <C-W>l
 imap <C-l> <C-W>l
 
+" buffer navigation
+map <C-a> :bprevious<CR>
+imap <C-a> :bprevious<CR>
+map <C-d> :bnext<CR>
+imap <C-d> :bnext<CR>
+map <C-e> :bdelete<CR>
+imap <C-e> :bdelete<CR>
+
+
 " NERDTree
 map <F8> :NERDTreeToggle<CR>
 imap <F8> :NERDTreeToggle<CR>
@@ -68,15 +73,6 @@ imap <F8> :NERDTreeToggle<CR>
 " Tagbar
 map <F9> :TagbarToggle<CR>
 imap <F9> :TagbarToggle<CR>
-
-" Tabs
-map <C-a> :tabprevious<CR>
-imap <C-a> :tabprevious<CR>
-map <C-d> :tabnext<CR>
-imap <C-d> :tabnext<CR>
-map <C-f> :tabnew<CR>
-imap <C-f> :tabnew<CR>
-
 
 colorscheme fiver
 

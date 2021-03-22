@@ -5,12 +5,12 @@ endif
 let loaded_sh_header = 1
 
 function SH_Header()
-	call append(0, "#!/bin/sh")
-	call append(1, "#")
-	call append(2, "# {App} - {purpose, description}")
-	call append(3, "#")
-	call append(4, "")
-	call append(5, "")
+	call append(0, "#!/usr/bin/env bash")
+	call append(1, "")
+	call append(2, "")
+	call append(3, "")
+	call append(4, "# vim: ts=2: sw=2: ai: si")
+	exe 3
 
 endfunction
 
